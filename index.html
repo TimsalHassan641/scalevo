@@ -1038,6 +1038,94 @@ footer {
   footer { flex-direction: column; gap: 20px; text-align: center; }
   .footer-links { flex-wrap: wrap; justify-content: center; }
 }
+
+/* ═══════════════════════════════════════════
+   COMPREHENSIVE MOBILE RESPONSIVE OVERRIDES
+   ═══════════════════════════════════════════ */
+@media (max-width: 768px) {
+
+  /* ── HERO ── */
+  .hero { padding: 100px 20px 64px; }
+  .hero p { font-size: 15px; }
+  .hero-btns { flex-direction: column; align-items: stretch; gap: 10px; }
+  .btn-primary, .btn-secondary {
+    width: 100%; justify-content: center; text-align: center;
+    padding: 15px 24px;
+  }
+  .hero-scroll { display: none; }
+  .hero-visual { margin-top: 36px; }
+
+  /* ── STATS ── */
+  .stat-item { padding: 22px 12px; }
+  .stat-num { font-size: 30px; }
+  .stat-label { font-size: 11px; }
+
+  /* ── SECTIONS ── */
+  section { padding: 56px 20px !important; }
+  .problem, .how, .features, .why, .integrations, .faq,
+  .niches, .pricing, .testimonials { padding: 56px 20px !important; }
+  .section-sub { font-size: 14px; margin-bottom: 32px; }
+
+  /* ── PROBLEM SECTION ── */
+  .problem-visual { padding: 28px 22px; }
+  .problem-stat { font-size: 54px; }
+  .problem-stat-label { font-size: 15px; }
+  .problem-point { padding: 14px 16px; gap: 12px; }
+
+  /* ── HOW IT WORKS ── */
+  .step-card { padding: 28px 22px; }
+
+  /* ── NICHE GRID — override inline style ── */
+  .niche-grid { grid-template-columns: 1fr !important; gap: 24px !important; }
+  .niche-tabs { flex-wrap: wrap; gap: 8px; justify-content: center; }
+  .niche-tab { font-size: 13px; padding: 9px 20px; }
+
+  /* ── FEATURES ── */
+  .feature-item { padding: 18px 16px; gap: 12px; }
+  .features-category-heading { font-size: 12px; }
+
+  /* ── PRICING ── */
+  .pricing-grid { grid-template-columns: 1fr !important; gap: 16px; }
+  .price-card.featured { order: -1; }
+  .price-card { padding: 28px 24px; }
+  .price-amount { font-size: 38px; }
+
+  /* ── WHY SCALEVO ── */
+  .why-grid { grid-template-columns: 1fr !important; gap: 14px; }
+  .why-card { padding: 22px 20px; }
+
+  /* ── INTEGRATIONS ── */
+  .tools-grid { grid-template-columns: repeat(3, 1fr) !important; gap: 10px; }
+  .tool-card { padding: 16px 10px; }
+  .tool-icon { font-size: 22px; }
+  .tool-name { font-size: 11px; }
+  .tool-desc { font-size: 10px; }
+
+  /* ── FAQ ── */
+  .faq-question { font-size: 14px; padding: 16px 18px; }
+  .faq-answer { padding: 0 18px; }
+  .faq-item.open .faq-answer { padding: 14px 18px 18px; }
+
+  /* ── FOOTER ── */
+  footer { padding: 40px 20px 28px; }
+  .footer-top { gap: 24px; }
+  .newsletter-form { max-width: 100%; }
+
+  /* ── MODALS ── */
+  .modal-box { border-radius: 16px; max-height: 90vh; }
+  .modal-header { padding: 18px 20px; }
+  .modal-body { padding: 20px; }
+  .modal-title { font-size: 17px; }
+}
+
+@media (max-width: 480px) {
+  .stats { grid-template-columns: repeat(2, 1fr); }
+  .stat-num { font-size: 26px; }
+  .tools-grid { grid-template-columns: repeat(2, 1fr) !important; }
+  .niche-tab { font-size: 12px; padding: 8px 16px; }
+  .hero h1 { line-height: 1.18; }
+}
+
 </style>
 </head>
 <body>
